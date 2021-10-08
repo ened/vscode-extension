@@ -61,7 +61,7 @@ class SnykExtension extends SnykLib implements IExtension {
       this.openerService,
       this.viewManagerService,
       vsCodeWorkspace,
-      this.processError.bind(this),
+      Logger,
     );
 
     this.cliDownloadService = new CliDownloadService(this.context, new StaticCliApi(), vsCodeWindow, Logger);
